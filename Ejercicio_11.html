@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 11</title>
+</head>
+
+<body>
+    <h1>Ejercicio 11</h1>
+    <p>Escribe un programa que pida dos números enteros entre 25 y 75 y que diga si hay un dígito en común entre los dos
+        números.
+    </p>
+
+    <script>
+        let num1 = window.prompt("Introduce un numero entre 25 y 75");
+        let num2 = window.prompt("Introduce otro numero entre 25 y 75");
+
+        let num1Digito1 = parseInt(num1.substring(0, 1));
+        let num1Digito2 = parseInt(num1.substring(1));
+        let num2Digito1 = parseInt(num1.substring(0, 1));
+        let num2Digito2 = parseInt(num1.substring(1));
+
+
+
+        /* Con If... else */
+        if (num1Digito1 === num1Digito2 === num1Digito2 === num1Digito2)
+            console.log(`Son iguales`);
+        else
+            console.log(`No son iguales`);
+
+    </script>
+
+</body>
+
+</html>

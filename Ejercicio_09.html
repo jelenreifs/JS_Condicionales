@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 09</title>
+</head>
+
+<body>
+    <h1>Ejercicio 09</h1>
+    <p>Un programa que te pregunta la temperatura que hace donde estás y te sugiere qué hacer dependiendo de ella. Las
+        recomendaciones son:
+    </p>
+    <ul>
+        <li> Si hace más de 40 grados, vete a otro sitio</li>
+        <li> Entre 30 y 40 grados, enciende el aire acondicionado</li>
+        <li> Entre 30 y 20 grados, no hagas nada</li>
+        <li> Entre 10 y 20 grados, enciende la calefacción</li>
+        <li> Si hace menos de 10 grados, vete a otro sitio</li>
+    </ul>
+
+    <script>
+        let temperatura = window.prompt("¿Cuál es la temperatura?");
+        let ubicacion = window.prompt("¿Cuál es tu ubicación?");
+
+        /* Con If... elese */
+
+        if (temperatura > 40)
+            console.log(`Vete a otro sitio`);
+        else if (temperatura > 30 && temperatura < 40)
+            console.log(`Enciende el aire acondicionado `);
+        else if (temperatura > 30 && temperatura < 20)
+            console.log(`No hagas nada `);
+        else if (temperatura > 10 && temperatura < 20)
+            console.log(`enciende la calefacción `);
+        else if (temperatura > 10)
+            console.log(`vete a otro sitio`);
+        else
+            console.log(`¿Más de 40º? `);
+
+    </script>
+
+</body>
+
+</html>

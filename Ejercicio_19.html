@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 19</title>
+</head>
+
+<body>
+    <h1>Ejercicio 19</h1>
+    <p>Decir el número de helados que queremos comprar. Cada helado vale 2 euros. Si compramos más de 10 helados, nos
+        regalan uno.
+
+        Mostrar en pantalla el número de helados que nos dan y cuánto hemos pagado por ellos.
+
+        (Sólo damos un helado gratuito aunque compren muchos más helados que 10)
+    </p>
+
+
+    <script>
+
+        let heladosTotal = parseInt(window.prompt('¿Cuantos helados quieres comprar?'));
+
+        let precio = 2;
+
+        if (heladosTotal >= 10)
+            console.log(` ${heladosTotal + 1} helados, ${2 * heladosTotal}€ `);
+
+        else
+            console.log(` ${heladosTotal} helados, ${2 * heladosTotal}€ `);
+
+
+    </script>
+
+
+</body>
+
+</html>

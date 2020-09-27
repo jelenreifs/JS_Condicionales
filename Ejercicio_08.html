@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 08</title>
+</head>
+
+<body>
+    <h1>Ejercicio 08</h1>
+    <p>
+        Escribe un programa que pida dos números al usuario.
+        Después muestra un mensaje que dice cómo se relacionan entre los dos.
+        Por ejemplo si escribe 5 y 7 , muestra "5 es menor que 7".
+    </p>
+
+    <script>
+        let num1 = window.prompt("Introduce un número");
+        let num2 = window.prompt("Introduce otro número");
+
+        /* Con If... elese */
+
+        if (num1 < num2)
+            console.log(` ${num1} es menor que ${num2} `);
+        else if (num1 > num2)
+            console.log(` ${num1} es mayor que ${num2} `);
+        else
+            console.log(` ${num1} y ${num2} son iguales `);
+
+    </script>
+
+</body>
+
+</html>

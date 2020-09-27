@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 31</title>
+</head>
+
+<body>
+    <h1>Ejercicio 31</h1>
+    <p>Haz un programa que simule un libro de “Elige tu propia aventura”. Muestra un texto inicial y pide al usuario que
+        seleccione una opción para continuar con la historia. Según la opción que elija el usuario, muestra un texto
+        diferente
+        para cada una de las opciones y ofrece otras 2 opciones al usuario.
+    </p>
+
+    <script>
+
+        let nombre = window.prompt('¿como te llamas?');
+        console.log(`Hola ${nombre}, ¡elige tu propia aventura!”`);
+
+        let sexo = window.prompt(`¿Quieres que el/la protagonista sea una mujer o un hombre?
+         Introduce "M" si es mujer
+         Introduce "H" si es hombre`);
+
+        if (sexo === 'H') {
+
+            switch (nombreHombre = window.prompt(`Elije uno de estos dos nombres:
+         Introduce "P" si es Pepe
+         Introduce "F" si es Felipe`).toLowerCase()) {
+                case 0:
+                    nombreHombre === 'p';
+                    p = 'Pepe';
+                    break;
+                case 1:
+                    nombreHombre === 'f';
+                    f = 'Felipe';
+                    break;
+            }
+            console.log(`Me llamo ${nombreHombre} y soy el protagonista de la historia`);
+
+
+
+
+
+
+        } else {
+            switch (nombreMujer = window.prompt(`Elije uno de estos dos nombres:
+         Introduce "L" si es Laura
+         Introduce "F" si es Jasone`).toLowerCase()) {
+                case 0:
+                    l = 'Laura';
+                    break;
+                case 1:
+                    a = 'Ana';
+                    break;
+            }
+            console.log(`Me llamo ${nombreMujer} y soy la protagonista de la historia`);
+
+        }
+
+
+
+
+
+
+
+    </script>
+
+
+</body>
+
+</html>

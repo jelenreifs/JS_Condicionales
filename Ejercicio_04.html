@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 04</title>
+</head>
+
+<body>
+    <h1>Ejercicio 04</h1>
+    <p>
+        Escribe un programa que pida al usuario tres números y que diga si la diferencia entre uno de ellos es
+        exactamente 20 menos que uno de los otros.
+        Por ejemplo, si el usuario introduce 20, 40 y 55, el programa dirá que el primer número es 20 menos que el
+        segundo.
+    </p>
+
+    <script>
+        let num1 = window.prompt("Introduce un número");
+        let num2 = window.prompt("Introduce otro número");
+        let num3 = window.prompt("Introduce un número más");
+
+        /* Con Switch */
+
+
+        if (num1 * 2 === num2)
+            console.log(num1 + ' es el doble de ' + num2);
+        else if (num1 * 2 === num3)
+            console.log(num1 + ' es el doble de ' + num3);
+        else if (num2 * 2 === num1)
+            console.log(num2 + ' es el doble de ' + num1);
+        else if (num2 * 2 === num3)
+            console.log(num2 + ' es el doble de ' + num3);
+        else if (num3 * 2 === num1)
+            console.log(num3 + ' es el doble de ' + num2);
+        else if (num3 * 2 === num2)
+            console.log(num3 + ' es el doble de ' + num2);
+        else
+            console.log('Ningún número es el doble de los otros dos');
+
+
+
+
+    </script>
+
+
+</body>
+
+</html>

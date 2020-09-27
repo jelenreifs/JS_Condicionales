@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 12</title>
+</head>
+
+<body>
+    <h1>Ejercicio 12</h1>
+    <p>Resultado de carrera.
+        Hacer varios programas en los que se le pregunta al usuario el puesto en el que acabó.
+        Después:
+    <ul>
+        <li> Si el valor de puesto es 1 mostramos mensaje con "Ganaste", si no "Lo importante es participar”.</li>
+        <li> Si el valor de puesto es 1, mostramos mensaje con "Medalla de oro", si el valor de puesto es 2, mostramos
+            el mensaje con "Medalla de plata", si es 3 "Medalla de bronce" y al resto "Lo importante es participar.</li>
+        <li> Con switch: Si el valor de puesto es 1, mostramos mensaje con "Medalla de oro", si el valor de puesto es 2,
+            mostramos el mensaje con "Medalla de plata", si es 3 "Medalla de bronce" y al resto "Lo importante es
+            participar.</li>
+        <li>○ Los puestos 1, 2 y 3 ven el mensaje "Sube al podium", el resto ven el mensaje "Se acabó la carrera". Hazlo
+            usando un if/else.</li>
+    </ul>
+
+    </p>
+
+    <script>
+        let puesto = window.prompt("¿En qué puesto has quedado en la carrera?");
+
+        /* Con If... else */
+        if (puesto === 1)
+            console.log(`¡Ganaste!`);
+        else
+            console.log(`Lo importante es participar`);
+
+        /* Con If... else */
+        if (puesto === 1)
+            console.log(`Medalla de oro`);
+        else if (puesto === 2)
+            console.log(`Medalla de plata`);
+        else if (puesto === 3)
+            console.log(`Medalla de bronce`);
+        else
+            console.log(`Lo importante es participar`);
+
+
+        /* Con Switch */
+        switch (puesto) {
+            case 0:
+                puesto === "Medalla de oro";
+                break;
+            case 1:
+                 puesto === "Medalla de plata";
+                break;
+            case 2:
+                 puesto === "Medalla debronce";
+                break;
+
+            default:
+                console.log('Lo importante es participar');
+                break;
+        }
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 25</title>
+</head>
+
+<body>
+    <h1>Ejercicio 25</h1>
+    <p>Crea un programa para ver si los comerciales reciben un extra.
+        Si venden más de 500 euros, les damos un extra de el 5% del total de lo que han vendido.
+        El usuario introduce su nombre y el precio de las ventas.
+        Muestra en pantalla su nombre, seguido de las ventas y en el caso de que las ventas superen 500 euros el 5% de
+        las ventas como extra.
+    </p>
+
+    <script>
+        let nombre = window.prompt(`Introduce tu nombre`);
+        let ventas = parseInt(window.prompt(`Introduce la cantidad total de ventas`));
+        let extra = ventas * 5 / 100;
+
+        if (ventas > 500) {
+            console.log(
+                `Nombre: ${nombre} | Ventas: ${ventas + extra}`);
+
+        } else {
+            console.log(
+                `Nombre: ${nombre} | Ventas: ${ventas}`);
+        }
+
+
+    </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 17</title>
+</head>
+
+<body>
+    <h1>Ejercicio 17</h1>
+    <p>Escribe un programa que dada una frase sacará su carácter central. Nota:</p>
+    <ul>
+        <li> Si la largura de la frase es par deberá sacar los dos caracteres centrales correspondientes.</li>
+        <li> Si es impar deberá sacar su único carácter central.</li>
+    </ul>
+
+
+    <script>
+
+        let frase = 'Las_cosas_simples_son_las_más_extraordinarias';
+        mitadFrase = frase.length / 2;
+
+        if (mitadFrase / 2 === 0) {
+            console.log('Soy par');
+            console.log(frase.substr(mitadFrase - 2, 2));
+        } else {
+            console.log('Soy impar');
+            console.log(frase.substr(mitadFrase - 2, 1));
+        }
+
+
+    </script>
+
+</body>
+
+</html>

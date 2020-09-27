@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 10</title>
+</head>
+
+<body>
+    <h1>Ejercicio 10</h1>
+    <p>Escribe un programa que pida dos valores al usuario y:</p>
+    <ul>
+        <li> Si los dos valores son iguales muestre 0</li>
+        <li> Si los dos valores tienen el mismo resto al dividir entre 6 mostrar el más pequeño</li>
+        <li> Si no que muestre el más grande de los dos</li>
+    </ul>
+
+    <script>
+        let num1 = window.prompt("Introduce un numero");
+        let num2 = window.prompt("Introduce otro numero");
+
+        /* Dividendo = divisor * cociente + resto */
+
+        /*  num1 = 6 * cociente + resto  */
+
+
+        if (num1 === num2)
+            console.log(0);
+        else if ((num1 / 6) === (num2 / 6))
+
+            console.log(` El más pequeño: ${num2}`);
+        else if ((num1 / 6) === (num2 / 6) && (num1 >= num2 === false))
+            console.log(` El más pequeño: ${num1}`);
+        else
+            console.log(`No tienen el mismo resto`);
+
+    </script>
+
+</body>
+
+</html>
